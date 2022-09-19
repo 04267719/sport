@@ -7,7 +7,7 @@
    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
     <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FalconNews - Article</title>
+  <title>FalconSport - Article</title>
 </head>
 <style>
 
@@ -103,13 +103,13 @@ article {
         </div>
         <label style="font-family:'Bebas Neue'; font-size:40px" id="title">Oops, we couldn't find that article!</label><br><br>
       </header>
-        <img id="cover" onerror="document.getElementById('cover').src='https://i.pinimg.com/originals/70/fc/0c/70fc0c9846423ccf3ff8506fd9268233.jpg'" src=""/><br><br>
+        <img id="cover" onerror="document.getElementById('cover').src='https://www.fairobserver.com/wp-content/uploads/2021/07/Premier-League-history-news.jpg'" src=""/><br><br>
       <div>
         <label id="content"></label>
       </div>
       <footer>
-        <p style="text-align:center; font-size:16px"><strong>What are your opinions on this? Get in touch with us @FalconNews.</strong></p>
-        <p style="text-align:center; font-size:13px"><i>Copyright &copy; 2022 - FalconNews</i></p>
+        <p style="text-align:center; font-size:16px"><strong>What are your opinions on this? Get in touch with us @FalconSport.</strong></p>
+        <p style="text-align:center; font-size:13px"><i>Copyright &copy; 2022 - FalconSport</i></p>
       </footer>
     </article><br><br><br>
     <article>
@@ -129,7 +129,7 @@ article {
     var faunadb = window.faunadb
   var q = faunadb.query
   var client = new faunadb.Client({
-    secret: 'fnAEaVrp17AAyOEf0NNfZ9HFNMQ4mcWVXU66MyOs',
+    secret: 'fnAEw2WlvtAAy69QQMUsshJRK0kXdFbVn_QncMMj',
     domain: 'db.eu.fauna.com',
     scheme: 'https',
   })
@@ -195,13 +195,13 @@ client.query(
   
 
 
-      document.getElementById("firstpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-news.netlify.app/article.html/?" + x.data[x.data.length - 1].data.title + "\">" + title1 + "</a>" + "</b> by <i>" + name1 + "</i>"
+      document.getElementById("firstpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-sport.netlify.app/article.html/?" + x.data[x.data.length - 1].data.title + "\">" + title1 + "</a>" + "</b> by <i>" + name1 + "</i>"
       document.getElementById("firstimage").src = x.data[x.data.length - 1].data.cover
 
-      document.getElementById("secondpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-news.netlify.app/article.html/?" + x.data[x.data.length - 2].data.title + "\">" + title2 + "</a>" + "</b> by <i>" + name2 + "</i>"
+      document.getElementById("secondpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-sport.netlify.app/article.html/?" + x.data[x.data.length - 2].data.title + "\">" + title2 + "</a>" + "</b> by <i>" + name2 + "</i>"
       document.getElementById("secondimage").src = x.data[x.data.length - 2].data.cover
 
-      document.getElementById("thirdpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-news.netlify.app/article.html/?" + x.data[x.data.length - 3].data.title + "\">" + title3 + "</a>" + "</b> by <i>" + name3 + "</i>"
+      document.getElementById("thirdpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-sport.netlify.app/article.html/?" + x.data[x.data.length - 3].data.title + "\">" + title3 + "</a>" + "</b> by <i>" + name3 + "</i>"
       document.getElementById("thirdimage").src = x.data[x.data.length - 3].data.cover
 
                                    

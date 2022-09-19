@@ -141,7 +141,7 @@ button:hover {
 
 <script type="text/javascript">
   document.getElementById("myButton").onclick = function () {
-      location.href = "https://falcon-news.netlify.app/index.html";}
+      location.href = "https://falcon-sport.netlify.app/";}
 </script>
   
   <script>
@@ -149,7 +149,7 @@ button:hover {
      var faunadb = window.faunadb
   var q = faunadb.query
   var client = new faunadb.Client({
-    secret: 'fnAEaVrp17AAyOEf0NNfZ9HFNMQ4mcWVXU66MyOs',
+    secret: 'fnAEw2WlvtAAy69QQMUsshJRK0kXdFbVn_QncMMj',
     domain: 'db.eu.fauna.com',
     scheme: 'https',
   })
@@ -195,7 +195,7 @@ client.query(
 )
 .then((ret) =>
      
-     window.location.href = "https://falcon-news.netlify.app/article.html/?" + ret.data.title
+     window.location.href = "https://falcon-sport.netlify.app/article.html/?" + ret.data.title
      )
 });
 
