@@ -221,6 +221,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: all .3s ease;
 }
 
 
@@ -233,7 +234,13 @@ li a {
     width: 16px;
             height: 16px;
             vertical-align: middle;
-            margin-left: 2px;
+            margin-left: 2px
+}
+
+
+li a:hover:not(.active) {
+  background-color: #dedede;
+  color: black;
 }
 
     </style>
@@ -275,10 +282,13 @@ li a {
             <div class="right">
                 <ul>
                     <li><a  class="active"><img class="coins2" src="https://i.imgur.com/ka5DlfC.png"> <label id="coins">0</label></a></li>
+                    <li><a href="index.html">Homepage</a></li>
                   </ul>
+
+
                   
                 <br><br>
-                <h1>FalconSports - Pack Opener</h1>
+                <h1>FalconSports Pack Opener</h1>
                 <br><br>
                 <br>
                 <button id="openPack">Open Pack for <img class="coins2" src="https://i.imgur.com/ka5DlfC.png"><label style="cursor: pointer;" id="cost">0</label></button><br><br><br><br>
