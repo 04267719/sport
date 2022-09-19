@@ -386,7 +386,7 @@ async function debug(){
 
   if(coins <= packprice - 1)
   {
-    alert("too poor!")
+    alert("Insufficient funds!")
   }
   else{
     document.getElementById("packImage").style.width = "90%"
@@ -394,7 +394,7 @@ async function debug(){
   document.getElementById("openPack").style.cursor = "not-allowed"
   let player;
     let random = Math.random()
-    editCoins(300, 5, "remove", false)
+    editCoins(100, 5, "remove", false)
  
     if(random < 0.000000031){
  
