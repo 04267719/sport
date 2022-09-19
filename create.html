@@ -2,7 +2,6 @@
 <html>
 
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text" rel="stylesheet">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -146,13 +145,7 @@ button:hover {
   
   <script>
     var regex = /^[0-9a-zA-Z]+$/;
-     var faunadb = window.faunadb
-  var q = faunadb.query
-  var client = new faunadb.Client({
-    secret: 'fnAEw2WlvtAAy69QQMUsshJRK0kXdFbVn_QncMMj',
-    domain: 'db.eu.fauna.com',
-    scheme: 'https',
-  })
+   
  
   function makeid(length) {
     var result           = '';
@@ -165,7 +158,7 @@ button:hover {
    return result;
 }
     
-function create(){
+async function create(){
       var objToday = new Date(),
 	weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
 	dayOfWeek = weekday[objToday.getDay()],
@@ -176,29 +169,28 @@ function create(){
 	curYear = objToday.getFullYear();
 var today = dayOfWeek + " " + dayOfMonth + " " + curMonth;
   
-client.query(
-  q.Get(
-    q.Match(q.Index('post_by_article'), document.getElementById("name").value)
-  )
-)
-.then((ret) => 
-      alert("This article tag is already taken!")
 
-)
-  
-.catch(function(e){
-    client.query(
-  q.Create(
-    q.Collection('falcon-posts'),
-    { data: { title: document.getElementById("name").value, creationdate: today, cover: document.getElementById("cover").value, titlereal: document.getElementById("title").value, uploader:  document.getElementById("uploader").value, contents: document.getElementById("content").value.replace(new RegExp('\n','g'), 'linebreak')} },
-  )
-)
-.then((ret) =>
-     
-     window.location.href = "https://falcon-sport.netlify.app/article.html/?" + ret.data.title
-     )
+
+let json = [{title: document.getElementById("name").value, creationdate: today, cover: document.getElementById("cover").value, titlereal: document.getElementById("title").value, uploader:  document.getElementById("uploader").value, contents: document.getElementById("content").value.replace(new RegExp('\n','g'), 'linebreak')}]
+
+var response = await fetch("https://thedriverbob-nig.ga/upload", {
+  "headers": {
+    "content-type": "application/json",
+  },
+  "body": JSON.stringify(json),
+  "method": "POST"
 });
 
+var data = await response.json();
+console.log(data)
+if(data.success == false)
+{
+  alert(data.error)
+}
+else{
+  window.location.href = "https://falcon-sport.netlify.app/article.html/?" + data.id
+
+}
 
 }
     </script>
