@@ -115,11 +115,11 @@ article {
     <article>
       <header>
        <label style="font-family:'Bebas Neue'; font-size:40px; text-align:center" id="title">Latest Articles</label><br><br>
-       <img id="firstimage" onerror="document.getElementById('firstimage').src='https://static.thenounproject.com/png/2009949-200.png'" style="width:126px; height:126px; vertical-align:middle" src="https://static.thenounproject.com/png/2009949-200.png">
+       <img id="firstimage" onerror="document.getElementById('firstimage').src='https://www.fairobserver.com/wp-content/uploads/2021/07/Premier-League-history-news.jpg'" style="width:126px; height:126px; vertical-align:middle" src="https://static.thenounproject.com/png/2009949-200.png">
        <label id="firstpost" style="margin-left:10px"> Oops, we couldn't find any recent articles!</label><br><br>
-       <img id="secondimage" onerror="document.getElementById('secondimage').src='https://static.thenounproject.com/png/2009949-200.png'" style="width:126px; height:126px; vertical-align:middle" src="https://static.thenounproject.com/png/2009949-200.png">
+       <img id="secondimage" onerror="document.getElementById('secondimage').src='https://www.fairobserver.com/wp-content/uploads/2021/07/Premier-League-history-news.jpg'" style="width:126px; height:126px; vertical-align:middle" src="https://static.thenounproject.com/png/2009949-200.png">
        <label id="secondpost" style="margin-left:10px"> Oops, we couldn't find any recent articles!</label><br><br>
-       <img id="thirdimage" onerror="document.getElementById('thirdimage').src='https://static.thenounproject.com/png/2009949-200.png'" style="width:126px; height:126px; vertical-align:middle;" src="https://static.thenounproject.com/png/2009949-200.png">
+       <img id="thirdimage" onerror="document.getElementById('thirdimage').src='https://www.fairobserver.com/wp-content/uploads/2021/07/Premier-League-history-news.jpg'" style="width:126px; height:126px; vertical-align:middle;" src="https://static.thenounproject.com/png/2009949-200.png">
        <label id="thirdpost" style="margin-left:10px"> Oops, we couldn't find any recent articles!</label>
      </header>
    </article> 
@@ -134,78 +134,42 @@ article {
     scheme: 'https',
   })
 
-function start(){
+async function start(){
 
     var segments = window.location.href.split('?')
 let name = segments[1]
 
-client.query(
-  q.Get(
-    q.Match(q.Index('post_by_article'), name)
-  )
-)
-.then(function(ret){
-    document.getElementById("content").innerHTML = ret.data.contents.replace(/linebreak/g, "<br>") + "<br>"
-    document.getElementById("title").innerHTML = "<b>" + ret.data.titlereal + "</b>"
-    document.getElementById("author").innerHTML =  "Published on <i><b>" + ret.data.creationdate + "</b></i><br>Written by <i><b>" + ret.data.uploader + "</b></i>"
-    document.getElementById("cover").src = ret.data.cover
-  })
-.catch(function(e){
-    console.log(e)
-});
+
+
+var response = await fetch("https://thedriverbob-nig.ga/article/title-test");
+var data = await response.json();
+console.log(data)
+
+document.getElementById("content").innerHTML = data.contents.replace(/linebreak/g, "<br>") + "<br>"
+    document.getElementById("title").innerHTML = "<b>" + data.titlereal + "</b>"
+    document.getElementById("author").innerHTML =  "Published on <i><b>" + data.creationdate + "</b></i><br>Written by <i><b>" + data.uploader + "</b></i>"
+    document.getElementById("cover").src = data.cover
     
 
-    client.query(
-   q.Map(
-  q.Paginate(q.Documents(q.Collection('falcon-posts'))),
-  q.Lambda(x => q.Get(x))
-)).then (function(x){
+    response = await fetch("https://thedriverbob-nig.ga/recent/3");
+    data = await response.json();
 
-   let title1 = x.data[x.data.length - 1].data.titlereal
-   let title2 = x.data[x.data.length - 2].data.titlereal
-   let title3 = x.data[x.data.length - 3].data.titlereal
-  if(title1.length > 30)
-  {
-    title1 = x.data[x.data.length - 1].data.titlereal.substring(0, 33) + "..."
-  }
-  if(title2.length > 30)
-  {
-    title2 = x.data[x.data.length - 2].data.titlereal.substring(0, 33) + "..."
-  }
-  if(title3.length > 30)
-  {
-    title3 = x.data[x.data.length - 3].data.titlereal.substring(0, 33) + "..."
-  }
+    for (let i = 0; i < data.results.length; i++)
+			{
 
-  let name1 = x.data[x.data.length - 1].data.uploader
-   let name2 = x.data[x.data.length - 2].data.uploader
-   let name3 = x.data[x.data.length - 3].data.uploader
-  if(name1.length > 20)
-  {
-    name1 = x.data[x.data.length - 1].data.uploader.substring(0, 17) + "..."
-  }
-  if(name2.length > 20)
-  {
-    name2 = x.data[x.data.length - 2].data.uploader.substring(0, 17) + "..."
-  }
-  if(name3.length > 20)
-  {
-    name3 = x.data[x.data.length - 3].data.uploader.substring(0, 17) + "..."
-  }
-  
+      }
+
+      document.getElementById("firstpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-sport.netlify.app/article.html/?" + data.results[0].title  + "\">" + data.results[0].titlereal  + "</a>" + "</b> by <i>" + data.results[0].uploader  + "</i>"
+      document.getElementById("firstimage").src = data.results[0].cover
+
+      document.getElementById("secondpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-sport.netlify.app/article.html/?" + data.results[1].title + "\">" + data.results[1].titlereal + "</a>" + "</b> by <i>" + data.results[1].uploader + "</i>"
+      document.getElementById("secondimage").src = data.results[1].cover
+
+      document.getElementById("thirdpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-sport.netlify.app/article.html/?" + data.results[2].title + "\">" + data.results[2].titlereal + "</a>" + "</b> by <i>" + data.results[2].uploader + "</i>"
+      document.getElementById("thirdimage").src =  data.results[2].cover
 
 
-      document.getElementById("firstpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-sport.netlify.app/article.html/?" + x.data[x.data.length - 1].data.title + "\">" + title1 + "</a>" + "</b> by <i>" + name1 + "</i>"
-      document.getElementById("firstimage").src = x.data[x.data.length - 1].data.cover
 
-      document.getElementById("secondpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-sport.netlify.app/article.html/?" + x.data[x.data.length - 2].data.title + "\">" + title2 + "</a>" + "</b> by <i>" + name2 + "</i>"
-      document.getElementById("secondimage").src = x.data[x.data.length - 2].data.cover
-
-      document.getElementById("thirdpost").innerHTML = "<b><a style=\"color:black\" href=\"https://falcon-sport.netlify.app/article.html/?" + x.data[x.data.length - 3].data.title + "\">" + title3 + "</a>" + "</b> by <i>" + name3 + "</i>"
-      document.getElementById("thirdimage").src = x.data[x.data.length - 3].data.cover
-
-                                   
-      })
     
 }
 </script>
