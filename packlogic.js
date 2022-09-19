@@ -214,10 +214,10 @@ function openPack(){
      }
  
  }
- else if(random < 0.0008){
+ else if(random < 0.0001){
      player = players[indexFromName("bdr")]
  }
- else if(random < 0.001){
+ else if(random < 0.0002){
    player = players[indexFromName("weiland")]
  }
  else if(random < 0.01){
