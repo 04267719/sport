@@ -195,7 +195,7 @@ function openPack(){
 
   if(coins <= packprice - 1)
   {
-    alert("too poor!")
+    alert("Insufficient funds!")
   }
   else{
     let player;
