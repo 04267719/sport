@@ -14,7 +14,7 @@ let players = [{name: "thedriverbob", sellprice: 100, image: "https://i.imgur.co
 {name: "osamabinladen", sellprice: 375, image: "https://i.imgur.com/1LnFQr6.png", fullname: "Osama Bin Laden"},
 {name: "speed", sellprice: 375, image: "https://i.imgur.com/GbTpeub.png", fullname: "Speed"},
 {name: "vladimirputin", sellprice: 400, image: "https://i.imgur.com/TgIv6TJ.png", fullname: "Vladimir Putin"},
-{name: "queenelizabeth", sellprice: 450, image: "https://i.imgur.com/hx17Gcz.png", fullname: "Queen Elizabeth"},
+{name: "queenelizabeth", sellprice: 450, image: "https://i.imgur.com/Qkd5uaQ.png", fullname: "Queen Elizabeth"},
 {name: "chunkz", sellprice: 450, image: "https://i.imgur.com/y261uvj.png", fullname: "Chunkz"},
 {name: "joshbalu", sellprice: 450, image: "https://i.imgur.com/z8ZZIcO.png", fullname: "Josh Balu"},
 {name: "thirly", sellprice: 500, image: "https://i.imgur.com/Bdkr0CO.png", fullname: "Thirly"},
@@ -24,7 +24,7 @@ let players = [{name: "thedriverbob", sellprice: 100, image: "https://i.imgur.co
 {name: "munal", sellprice: 700, image: "https://i.imgur.com/Gm26Hoq.png", fullname: "Munal"},
 {name: "absq", sellprice: 800, image: "https://i.imgur.com/jFpwqnw.png", fullname: "absq"},
 {name: "abdi", sellprice: 800, image: "https://i.imgur.com/SwqALsy.png", fullname: "Abdi"},
-{name: "andrewtate", sellprice: 900, image: "https://i.imgur.com/HbR5QYC.png", fullname: "Andrew Tate"},
+{name: "andrewtate", sellprice: 900, image: "https://i.imgur.com/ytZ6Pvv.png", fullname: "Andrew Tate"},
 {name: "weiland", sellprice: 950, image: "https://i.imgur.com/hXo6sgL.png", fullname: "Weiland"},
 {name: "bdr", sellprice: 1000, image: "https://i.imgur.com/4UeiGjX.png", fullname: "bdr"}]
 
