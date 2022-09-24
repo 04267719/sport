@@ -1,37 +1,37 @@
 let coins = 500
-let packprice = 100
+let packprice = 250
 let autoOpen = false
 
-let players = [{name: "thedriverbob", sellprice: 100, image: "https://i.imgur.com/bUWFGqR.png", fullname: "TheDriverBob"}, 
-{name: "joshbalu", sellprice: 700, image: "https://i.imgur.com/kwgEYvi.png", fullname: "Josh Balu"}, 
-{name: "bdr", sellprice: 1000000, image: "https://i.imgur.com/vVpukH6.png", fullname: "bdr"},
-{name: "weiland", sellprice: 100000, image: "https://i.imgur.com/1M8CbwP.png", fullname: "Weiland"},
-{name: "bradleyjames", sellprice: 200, image: "https://i.imgur.com/AC1x8OW.png", fullname: "Bardley"}, 
-{name: "queen", sellprice: 5000, image: "https://i.imgur.com/m8G3AGS.png", fullname: "Queen Elizabeth"},
-{name: "mrbeast", sellprice: 400, image: "https://i.imgur.com/PWhyCVk.png", fullname: "Mr Beast"},
-{name: "ascen", sellprice: 3750, image: "https://i.imgur.com/nHtJ5lh.png", fullname: "Ascen"},
-{name: "centralcee", sellprice: 800, image: "https://i.imgur.com/1QENiZS.png", fullname: "Central Cee"},
-{name: "chunkz", sellprice: 700, image: "https://i.imgur.com/1tjHn20.png", fullname: "Chunkz"},
-{name: "munal", sellprice: 1000, image: "https://i.imgur.com/W8vs0b9.png", fullname: "Munal"},
-{name: "kingcharles", sellprice: 200, image: "https://i.imgur.com/DKBqImk.png", fullname: "King Charles III"},
-{name: "andrewtate", sellprice: 7000, image: "https://i.imgur.com/UCT8qLp.png", fullname: "Andrew Tate"},
-{name: "drake", sellprice: 300, image: "https://i.imgur.com/3BhQfrd.png", fullname: "Drake"},
-{name: "messi", sellprice: 1, image: "https://i.imgur.com/vUJ3v5I.png", fullname: "Messi"},
-{name: "ronaldo", sellprice: 2, image: "https://i.imgur.com/RNxa9Qc.png", fullname: "Ronaldo"},
-{name: "jakepaul", sellprice: 400, image: "https://i.imgur.com/6Rj6MQG.png", fullname: "Jake Paul"},
-{name: "rock", sellprice: 3000, image: "https://i.imgur.com/nl3tRqJ.png", fullname: "The Rock"},
-{name: "aitch", sellprice: 500, image: "https://i.imgur.com/lZlPzZh.png", fullname: "Aitch"},
-{name: "thirly", sellprice: 850, image: "https://i.imgur.com/zeF4QJy.png", fullname: "Thirly"},
-{name: "morgz", sellprice: 450, image: "https://i.imgur.com/61iuw12.png", fullname: "Morgz"},
-{name: "thomas", sellprice: 400, image: "https://i.imgur.com/tuntj94.png", fullname: "Thomas Tuchel"},
-{name: "fabrizio", sellprice: 1200, image: "https://i.imgur.com/LLyVAEL.png", fullname: "Fabrizio Romano"},
-{name: "niko", sellprice: 800, image: "https://i.imgur.com/kgIOMSR.pngR", fullname: "Niko"},
-{name: "absq", sellprice: 2000, image: "https://i.imgur.com/3aqdaPQ.png", fullname: "absq"}]
+let players = [{name: "thedriverbob", sellprice: 100, image: "https://i.imgur.com/tthryy5.png", fullname: "TheDriverBob"}, 
+{name: "lebronjames", sellprice: 150, image: "https://i.imgur.com/e6UiXq5.png", fullname: "Lebron James"}, 
+{name: "drake", sellprice: 185, image: "https://i.imgur.com/woGWnGs.png", fullname: "Drake"},
+{name: "morgz", sellprice: 205, image: "https://i.imgur.com/plq9JWj.png", fullname: "Morgz"},
+{name: "stormzy", sellprice: 215, image: "https://i.imgur.com/jYPeSr3.png", fullname: "Stormzy"}, 
+{name: "aitch", sellprice: 220, image: "https://i.imgur.com/Ll8Z1Ly.png", fullname: "Aitch"},
+{name: "willsmith", sellprice: 230, image: "https://i.imgur.com/utk13fa.png", fullname: "Will Smith"},
+{name: "ksi", sellprice: 280, image: "https://i.imgur.com/LS8Xdlk.png", fullname: "KSI"},
+{name: "barackobama", sellprice: 350, image: "https://i.imgur.com/Or0OSAM.png", fullname: "Barack Obama"},
+{name: "osamabinladen", sellprice: 375, image: "https://i.imgur.com/1LnFQr6.png", fullname: "Osama Bin Laden"},
+{name: "speed", sellprice: 375, image: "https://i.imgur.com/GbTpeub.png", fullname: "Speed"},
+{name: "vladimirputin", sellprice: 400, image: "https://i.imgur.com/TgIv6TJ.png", fullname: "Vladimir Putin"},
+{name: "queenelizabeth", sellprice: 450, image: "https://i.imgur.com/hx17Gcz.png", fullname: "Queen Elizabeth"},
+{name: "chunkz", sellprice: 450, image: "https://i.imgur.com/y261uvj.png", fullname: "Chunkz"},
+{name: "joshbalu", sellprice: 450, image: "https://i.imgur.com/z8ZZIcO.png", fullname: "Josh Balu"},
+{name: "thirly", sellprice: 500, image: "https://i.imgur.com/Bdkr0CO.png", fullname: "Thirly"},
+{name: "alex", sellprice: 500, image: "https://i.imgur.com/JHRdQ21.png", fullname: "Alex"},
+{name: "therock", sellprice: 600, image: "https://i.imgur.com/3dTNhbQ.png", fullname: "The Rock"},
+{name: "ascen", sellprice: 600, image: "https://i.imgur.com/pbAcoh1.png", fullname: "ascen"},
+{name: "munal", sellprice: 700, image: "https://i.imgur.com/Gm26Hoq.png", fullname: "Munal"},
+{name: "absq", sellprice: 800, image: "https://i.imgur.com/jFpwqnw.png", fullname: "absq"},
+{name: "abdi", sellprice: 800, image: "https://i.imgur.com/SwqALsy.png", fullname: "Abdi"},
+{name: "andrewtate", sellprice: 900, image: "https://i.imgur.com/HbR5QYC.png", fullname: "Andrew Tate"},
+{name: "weiland", sellprice: 950, image: "https://i.imgur.com/hXo6sgL.png", fullname: "Weiland"},
+{name: "bdr", sellprice: 1000, image: "https://i.imgur.com/4UeiGjX.png", fullname: "bdr"}]
 
 
 let collectedplayers = []
 
-function updateCoins(){
+function updatecoins(){
   document.getElementById("coins").innerText = numberWithCommas(coins)
 }
 
@@ -56,7 +56,7 @@ else{
     collectedplayers =  JSON.parse(localStorage.getItem("falconSportPlayers"))
 }
 
-updateCoins()
+updatecoins()
 loadPlayers()
 document.getElementById("networth").innerText = numberWithCommas(getTotal())
 
@@ -118,7 +118,7 @@ function indexFromName(name){
     return index
 }
 
-async function editCoins(amount, speed , type, reopen){
+async function editcoins(amount, speed , type, reopen){
 
 
   currentcoins = coins
@@ -169,7 +169,7 @@ function sleep(time) {
 
 
 function sellRecentPack(){
-  editCoins(players[indexFromName(collectedplayers[collectedplayers.length - 1].player)].sellprice, 10, "add", true)
+  editcoins(players[indexFromName(collectedplayers[collectedplayers.length - 1].player)].sellprice, 10, "add", true)
   
 }
 
@@ -200,90 +200,81 @@ function openPack(){
   else{
     let player;
     let random = Math.random()
-    editCoins(packprice, 5, "remove", false)
+    editcoins(packprice, 5, "remove", false)
  
-    if(random < 0.000000031){
- 
- 
-     const rndInt = Math.floor(Math.random() * 2) + 1
-     if(rndInt == 1){
-         player = players[indexFromName("messi")]
-     }
-     else{
-         player = players[indexFromName("ronaldo")]
-     }
- 
- }
- else if(random < 0.0001){
+ if(random < 0.0001){
      player = players[indexFromName("bdr")]
  }
- else if(random < 0.0002){
+ else if(random < 0.001){
    player = players[indexFromName("weiland")]
  }
- else if(random < 0.01){
+ else if(random < 0.006){
      player = players[indexFromName("andrewtate")]
    }
-   else if(random < 0.015){
-    player = players[indexFromName("absq")]
+   else if(random < 0.007){
+    player = players[indexFromName("abdi")]
 }
-   else if(random < 0.025){
-     player = players[indexFromName("rock")]
+   else if(random < 0.008){
+     player = players[indexFromName("absq")]
    }
 
- else if(random < 0.045){
-   player = players[indexFromName("queen")]
- }
- else if(random < 0.07){
-   player = players[indexFromName("ascen")]
- }
- else if(random < 0.08){
-     player = players[indexFromName("thirly")]
-   }  
- else if(random < 0.09){
-   player = players[indexFromName("chunkz")]
- }
- else if(random < 0.15){
+ else if(random < 0.009){
    player = players[indexFromName("munal")]
  }
- else if(random < 0.17){
-     player = players[indexFromName("centralcee")]
+ else if(random < 0.01){
+   player = players[indexFromName("ascen")]
+ }
+ else if(random < 0.015){
+     player = players[indexFromName("therock")]
+   }  
+ else if(random < 0.02){
+   player = players[indexFromName("alex")]
+ }
+ else if(random < 0.025){
+   player = players[indexFromName("thirly")]
+ }
+ else if(random < 0.03){
+     player = players[indexFromName("joshbalu")]
    }
- else if(random < 0.18){
-     player = players[indexFromName("niko")]
+ else if(random < 0.035){
+     player = players[indexFromName("chunkz")]
    } 
- else if(random < 0.20){
-     player = players[indexFromName("fabrizio")]
+ else if(random < 0.05){
+     player = players[indexFromName("queenelizabeth")]
    } 
-   else if(random < 0.25){
-     player = players[indexFromName("aitch")]
+   else if(random < 0.09){
+     player = players[indexFromName("vladimirputin")]
    }
- else if(random < 0.30){
-   player = players[indexFromName("joshbalu")]
+ else if(random < 0.10){
+   player = players[indexFromName("speed")]
+ }
+ else if(random < 0.15){
+   player = players[indexFromName("osamabinladen")]
  }
  else if(random < 0.35){
-     const rndInt = Math.floor(Math.random() * 2) + 1
-     if(rndInt == 1){
-         player = players[indexFromName("morgz")]
-     }
-     else{
-         player = players[indexFromName("thomas")]
-     }
-   } 
- else if(random < 0.40){
-   player = players[indexFromName("bradleyjames")]
- }
- else if(random < 0.44){
-     player = players[indexFromName("drake")]
+     player = players[indexFromName("barackobama")]
    }
- else if(random < 0.45){
-   player = players[indexFromName("mrbeast")]
+ else if(random < 0.50){
+   player = players[indexFromName("ksi")]
  }
  else if(random < 0.70){
-     player = players[indexFromName("kingcharles")]
+     player = players[indexFromName("willsmith")]
    }
-   else if(random < 0.73){
-     player = players[indexFromName("jakepaul")]
+ else if(random < 0.75){
+   player = players[indexFromName("aitch")]
+ }
+ else if(random < 0.80){
+     player = players[indexFromName("stormzy")]
    }
+   else if(random < 0.94){
+     player = players[indexFromName("morgz")]
+   }
+ else if(random < 0.95){
+   player = players[indexFromName("drake")]
+ }
+ else if(random < 0.96){
+   player = players[indexFromName("lebronjames")]
+ }
  else if(random < 1){
    player = players[indexFromName("thedriverbob")]
  }
@@ -369,7 +360,7 @@ function sellById(id)
   });
 
 
-  editCoins(players[indexFromName(collectedplayers[index].player)].sellprice, 10, "add", false)
+  editcoins(players[indexFromName(collectedplayers[index].player)].sellprice, 10, "add", false)
   collectedplayers.splice(id, 1);
   localStorage.setItem("falconSportPlayers", JSON.stringify(collectedplayers))
 
@@ -394,90 +385,82 @@ async function debug(){
   document.getElementById("openPack").style.cursor = "not-allowed"
   let player;
     let random = Math.random()
-    editCoins(100, 5, "remove", false)
+    editcoins(100, 5, "remove", false)
  
-    if(random < 0.000000031){
- 
- 
-     const rndInt = Math.floor(Math.random() * 2) + 1
-     if(rndInt == 1){
-         player = players[indexFromName("messi")]
-     }
-     else{
-         player = players[indexFromName("ronaldo")]
-     }
- 
- }
- else if(random < 0.0004){
+
+ if(random < 0.0001){
      player = players[indexFromName("bdr")]
  }
- else if(random < 0.0009){
+ else if(random < 0.001){
    player = players[indexFromName("weiland")]
  }
- else if(random < 0.01){
+ else if(random < 0.006){
      player = players[indexFromName("andrewtate")]
    }
-   else if(random < 0.015){
-    player = players[indexFromName("absq")]
+   else if(random < 0.007){
+    player = players[indexFromName("abdi")]
 }
-   else if(random < 0.025){
-     player = players[indexFromName("rock")]
+   else if(random < 0.008){
+     player = players[indexFromName("absq")]
    }
 
- else if(random < 0.05){
-   player = players[indexFromName("queen")]
- }
- else if(random < 0.07){
-   player = players[indexFromName("ascen")]
- }
- else if(random < 0.08){
-     player = players[indexFromName("thirly")]
-   }  
- else if(random < 0.09){
-   player = players[indexFromName("chunkz")]
- }
- else if(random < 0.15){
+ else if(random < 0.009){
    player = players[indexFromName("munal")]
  }
- else if(random < 0.17){
-     player = players[indexFromName("centralcee")]
+ else if(random < 0.01){
+   player = players[indexFromName("ascen")]
+ }
+ else if(random < 0.015){
+     player = players[indexFromName("therock")]
+   }  
+ else if(random < 0.02){
+   player = players[indexFromName("alex")]
+ }
+ else if(random < 0.025){
+   player = players[indexFromName("thirly")]
+ }
+ else if(random < 0.03){
+     player = players[indexFromName("joshbalu")]
    }
- else if(random < 0.18){
-     player = players[indexFromName("niko")]
+ else if(random < 0.035){
+     player = players[indexFromName("chunkz")]
    } 
- else if(random < 0.20){
-     player = players[indexFromName("fabrizio")]
+ else if(random < 0.05){
+     player = players[indexFromName("queenelizabeth")]
    } 
-   else if(random < 0.25){
-     player = players[indexFromName("aitch")]
+   else if(random < 0.09){
+     player = players[indexFromName("vladimirputin")]
    }
- else if(random < 0.30){
-   player = players[indexFromName("joshbalu")]
+ else if(random < 0.10){
+   player = players[indexFromName("speed")]
+ }
+ else if(random < 0.15){
+   player = players[indexFromName("osamabinladen")]
  }
  else if(random < 0.35){
-     const rndInt = Math.floor(Math.random() * 2) + 1
-     if(rndInt == 1){
-         player = players[indexFromName("morgz")]
-     }
-     else{
-         player = players[indexFromName("thomas")]
-     }
-   } 
- else if(random < 0.40){
-   player = players[indexFromName("bradleyjames")]
- }
- else if(random < 0.44){
-     player = players[indexFromName("drake")]
+     player = players[indexFromName("barackobama")]
    }
- else if(random < 0.45){
-   player = players[indexFromName("mrbeast")]
+ else if(random < 0.50){
+   player = players[indexFromName("ksi")]
  }
  else if(random < 0.70){
-     player = players[indexFromName("kingcharles")]
+     player = players[indexFromName("willsmith")]
    }
-   else if(random < 0.73){
-     player = players[indexFromName("jakepaul")]
+ else if(random < 0.75){
+   player = players[indexFromName("aitch")]
+ }
+ else if(random < 0.80){
+     player = players[indexFromName("stormzy")]
    }
+   else if(random < 0.94){
+     player = players[indexFromName("morgz")]
+   }
+ else if(random < 0.95){
+   player = players[indexFromName("drake")]
+ }
+ else if(random < 0.96){
+   player = players[indexFromName("lebronjames")]
+ }
  else if(random < 1){
    player = players[indexFromName("thedriverbob")]
  }
@@ -562,5 +545,3 @@ let max = Math.floor(Math.random() * 23) + 1
      document.getElementById("openPack").style.cursor = "pointer"
 }
   }
-
-
