@@ -385,7 +385,7 @@ async function debug(){
   document.getElementById("openPack").style.cursor = "not-allowed"
   let player;
     let random = Math.random()
-    editcoins(100, 5, "remove", false)
+    editcoins(250, 5, "remove", false)
  
 
  if(random < 0.0001){
