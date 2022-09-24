@@ -452,13 +452,13 @@ async function debug(){
  else if(random < 0.90){
      player = players[indexFromName("stormzy")]
    }
-   else if(random < 0.97){
+   else if(random < 0.93){
      player = players[indexFromName("morgz")]
    }
- else if(random < 0.98){
+ else if(random < 0.95){
    player = players[indexFromName("drake")]
  }
- else if(random < 0.99){
+ else if(random < 0.97){
    player = players[indexFromName("lebronjames")]
  }
  else if(random < 1){
