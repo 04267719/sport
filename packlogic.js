@@ -260,19 +260,19 @@ function openPack(){
  else if(random < 0.70){
      player = players[indexFromName("willsmith")]
    }
- else if(random < 0.75){
+ else if(random < 0.80){
    player = players[indexFromName("aitch")]
  }
- else if(random < 0.80){
+ else if(random < 0.90){
      player = players[indexFromName("stormzy")]
    }
-   else if(random < 0.94){
+   else if(random < 0.97){
      player = players[indexFromName("morgz")]
    }
- else if(random < 0.95){
+ else if(random < 0.98){
    player = players[indexFromName("drake")]
  }
- else if(random < 0.96){
+ else if(random < 0.99){
    player = players[indexFromName("lebronjames")]
  }
  else if(random < 1){
@@ -446,19 +446,19 @@ async function debug(){
  else if(random < 0.70){
      player = players[indexFromName("willsmith")]
    }
- else if(random < 0.75){
+ else if(random < 0.80){
    player = players[indexFromName("aitch")]
  }
- else if(random < 0.80){
+ else if(random < 0.90){
      player = players[indexFromName("stormzy")]
    }
-   else if(random < 0.94){
+   else if(random < 0.97){
      player = players[indexFromName("morgz")]
    }
- else if(random < 0.95){
+ else if(random < 0.98){
    player = players[indexFromName("drake")]
  }
- else if(random < 0.96){
+ else if(random < 0.99){
    player = players[indexFromName("lebronjames")]
  }
  else if(random < 1){
